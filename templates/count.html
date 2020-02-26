@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<h1> Counted</h1>
+<a href="{% url 'home' %}">Back to homepage</a>
+<h2>Your word </h2>
+{{text}}
+
+<br>
+<h2>Word count</h2>
+Total word={{word}}
+<br/>
+<br/>
+{% for word ,value in dict %}
+ {{word}}={{value}}
+ <br/>
+ {% endfor %}
+ 
+<br/>
+<a href="{% url 'about' %}">About</a> 
+
+</html>
