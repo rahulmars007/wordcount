@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordCount</title>
+    <style>
+        .comment {
+          resize: none;
+          height: 300px;
+          width: 600px;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
+      </style>
+</head>
+<body>
+    <center>
+        <h1> Welcome To My WordCount</h1>
+    </center>
+    <form action = "{% url 'count' %}" method = "get">
+        <div align = "center">
+            <textarea class="comment" name="fulltextarea" ></textarea>
+        </div>  
+	</br> 
+    </br>
+    <center>
+        <input type="submit" value="Submit"/>
+    </center>
+    </form>
+</body>
+</html>
+
